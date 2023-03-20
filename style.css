@@ -1,1 +1,11 @@
-/* YOUR STYLES HERE */
+:root{
+  --text-color: #ffdb6d;
+}
+
+.heading{
+  color: var(--text-color);
+  text-align: center;
+  border: 3px solid var(--text-color);
+  padding: 1rem;
+  background-color: #1d2531;
+}
