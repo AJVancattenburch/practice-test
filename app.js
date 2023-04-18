@@ -21,8 +21,6 @@ let jsReleaseYear = 1995
 let jsAge = currentYear - jsReleaseYear
 
 
-
-
 console.log ("The current age of JavaScript is", currentYear - jsReleaseYear)
 
 if (jsAge >= ageToVote) {
@@ -50,16 +48,12 @@ console.log("Finished")
 
 console.log(user.name, "lives at", user.address.street, ",", user.address.city)
 
-
-
-
-
 for (let i = 0; i < cases.length; i++) {
   console.log (`${cases[i].title} - ${cases[i].releaseYear}`)
 }
 
-
 for (let i = 0; i < cases.length; i++) {
+
   if (cases[i].releaseYear === 1903)
-  console.log(cases[i].title)
+    console.log(cases[i].title)
 }
