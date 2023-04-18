@@ -20,10 +20,13 @@ let currentYear = 2023
 let jsReleaseYear = 1995
 let jsAge = currentYear - jsReleaseYear
 
-console.log ("The current age of JavaScript is", (jsAge))
+
+
+
+console.log ("The current age of JavaScript is", currentYear - jsReleaseYear)
 
 if (jsAge >= ageToVote) {
-  console.log ("JavaScript is old enough to vote")
+  console.log("JavaScript is old enough to vote")
 } else {
   console.log("JavaScript is not old enough to vote")
 }
@@ -33,24 +36,30 @@ if (jsAge >= ageToVote) {
 console.log("Starting")
 
 for (let i = 0; i <= 100; i++) {
+
   if (i % 10 == 0)
-  console.log(i)  
+    console.log(i)
+
     if (i == 50)
-    console.log ("Halfway")
+      console.log("Halfway")
 }
 
 console.log("Finished")
 
-console.log(user.name, "lives at ", user.address.street, user.address.city)
 
-for (let i = 0; i <= cases.length; i++) {
-  let newCases = cases[i]
-  console.log (cases[i])
+
+console.log(user.name, "lives at", user.address.street, ",", user.address.city)
+
+
+
+
+
+for (let i = 0; i < cases.length; i++) {
+  console.log (`${cases[i].title} - ${cases[i].releaseYear}`)
 }
 
-for (let i = 0; i <= cases.length; i++) {
-  let newCases = cases[i]
 
-  if (newCases.releaseYear == 1903)
-    console.log(newCases.title)
+for (let i = 0; i < cases.length; i++) {
+  if (cases[i].releaseYear === 1903)
+  console.log(cases[i].title)
 }
